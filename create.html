@@ -33,7 +33,64 @@
 
     <!-- SECCION PRINCIPAL DE LA WEB -->
     <main>
-        
+      <h1>Crear nuevo item</h1>
+      <form action="">
+        <label for="producto-categoria">Categoria:</label>
+        <select name="producto-categoria" id="producto-categoria">
+          <option value="default" selected>Seleccionar</option>
+          <option value="1"></option>
+          <option value="2"></option>
+          <option value="3"></option>
+          <option value="4"></option>
+        </select>
+
+        <label for="producto-licencia">Licencia:</label>
+        <select name="producto-licencia" id="producto-licencia">
+          <option value="default" selected>Seleccionar</option>
+          <option value="1"></option>
+          <option value="2"></option>
+          <option value="3"></option>
+          <option value="4"></option>
+        </select>
+
+        <label for="producto-nombre">Nombre del producto:</label>
+        <input type="text" name="producto-nombre>
+
+        <textarea
+          name="ta-descripcion"
+          id="ta-descripcion"
+          cols="80"
+          rows="10"
+          placeholder="Descripción del producto"
+        ></textarea>
+
+        <label for="producto-sku">SKU:</label>
+        <input type="text" name="producto-sku" />
+
+        <label for="producto-precio">Precio:</label>
+        <input type="text" name="producto-precio" />
+
+        <label for="producto-stock">Stock:</label>
+        <input type="text" name="producto-stock" />
+
+        <label for="producto-descuento">Descuento:</label>
+        <input type="text" name="producto-descuento" />
+
+        <label for="producto-cuotas">Cuotas:</label>
+        <select name="producto-cuotas" id="producto-cuotas">
+          <option value="default" selected>Seleccionar</option>
+          <option value="1"></option>
+          <option value="2"></option>
+          <option value="3"></option>
+          <option value="4"></option>
+        </select>
+
+        <label for="producto-img">Imágenes</label>
+        <input type="file" name="producto-img">
+
+        <input type="submit" value="Agregar producto">
+        <input type="reset" value="Limpiar">
+      </form>
     </main>
     <!-- FIN DE LA SECCION PRINCIPAL DE LA WEB  -->
 
