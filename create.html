@@ -18,14 +18,9 @@
           </a>
         </picture>
         <ul>
-          <li><a href="./pages/index.html">HOME</a></li>
-          <li><a href="./pages/contacto.html">CONTACTO</a></li>
-          <li><a href="./pages/login.html">LOGIN</a></li>
-          <li>
-            <a href="./pages/cart.html">
-              <img src="./img/icons/cart-icon.svg" alt="icono de carrito" />
-            </a>
-          </li>
+          <li><a href="./pages/index.html">VER TIENDA</a></li>
+          <li><a href="./pages/contacto.html">ADMIN</a></li>
+          <li><a href="./pages/login.html">SALIR</a></li>
         </ul>
       </nav>
     </header>
@@ -33,7 +28,59 @@
 
     <!-- SECCION PRINCIPAL DE LA WEB -->
     <main>
+      <h1>CREAR NUEVO ITEM</h1>
+      <nav>
+        <label for="category">Categoría: </label>
+        <select name="category" id="category">
+          <option value="Seleccionar">Seleccionar</option>
+        </select>
+
+        <label for="license">Licencia: </label>
+        <select name="license" id="license">
+          <option value="Seleccionar">Seleccionar</option>
+        </select>
+      </nav>
+
+      <div>
+        <label for="name">Nombre del producto:</label>
+        <input type="text" id="name" placeholder="Kakashi Hatake Shippuden Saga">
+      </div>
+
+      <div>
+        <label for="description"></label>
+        <textarea name="description" id="description" placeholder="Descripcion del producto"></textarea>
+      </div>
+
+      <div>
+        <label for="sku">SKU:</label>
+        <input type="text" id="sku" placeholder="SSK111AB0O1">
         
+        <label for="price">Precio:</label>
+        <input type="text" id="price" placeholder="$ 0.000,00">
+
+        <label for="stock">Stock:</label>
+        <input type="number" id="stock" placeholder="0">
+      </div>
+      
+      <div>
+        <label for="descuento">Descuento:</label>
+        <input type="text" id="descuento" placeholder="10%">
+
+        <label for="cuotas">Cuotas: </label>
+        <select name="cuotas" id="cuotas">
+          <option value="3" selected>3 Coutas sin interés</option>
+        </select>
+      </div>
+      
+      <div>
+        <span>Imágenes:</span>
+        <input type="file" />
+      </div>
+
+      <div>
+        <button type="submit">Agregar Producto</button>
+        <button type="reset">Limpiar</button>
+      </div>
     </main>
     <!-- FIN DE LA SECCION PRINCIPAL DE LA WEB  -->
 
