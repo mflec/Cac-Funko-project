@@ -188,7 +188,7 @@ display: block;
 /*COLECTIONS*/
 
 .collection{
-display: flex;
+display: grid;
 grid-template-columns: repeat(2 1fr);
 align-items: center;
 padding: var(--spacing-16 0);
