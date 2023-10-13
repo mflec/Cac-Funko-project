@@ -65,6 +65,8 @@ header, footer {
     font-family: var(--alternative-font);
     color: var(--light-font-solid);
 }
+
+
 ul, ol {
     list-style-type: none;
 }
@@ -172,7 +174,10 @@ gap: var(--spacing-36);
 }
 
 .product{
-    padding: 3rem;
+    padding: var(--spacing-28);
+}
+.product .cuotas{
+    color: var(--secondary-solid);
 }
 
 .product-row{
@@ -210,4 +215,75 @@ footer ul li:hover{
     display: flex;
     justify-content: center;
     padding-bottom: var(--spacing-20);
+}
+
+.shop{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 100%;
+}
+.filter-box{
+    padding: var(--spacing-68);
+}
+
+.filter-box h2, .filter-box input, .filter-box select, .filter-box option{
+    margin-bottom: var(--spacing-8);
+}
+
+.filter-box input{
+    height: var(--spacing-28);
+    padding: var(--spacing-8);
+    border-radius: var(--spacing-8);
+}
+
+.filter-box .order select{
+    height: 4rem;
+    padding: var(--spacing-8);
+    border-radius: var(--spacing-8);
+}
+
+.filter-box .price{
+    display: flex;
+    flex-direction: row;
+    width: var(--spacing-8);
+    align-items: center;
+}
+
+.filter-box .price input{
+    margin: var(--spacing-8);
+    width: var(--spacing-68);
+}
+
+.item-checkbox{
+    display: flex;
+    align-content: center;
+}
+
+.item-checkbox label{
+    padding-top: var(--spacing-8);
+    text-transform: uppercase;
+}
+
+
+
+.container .pages{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pages button{
+    background-color: var(--light-bg-solid);
+    width: 5%;
+    padding: var(--spacing-12);
+    margin: var(--spacing-8);
+    border-radius: var(--spacing-8);
+    border-color: rgb(196, 192, 192);
+}
+.pages button:hover{
+    cursor: pointer;
+    color: var(--primary-solid);
+    border-color: var(--primary-solid);
+    
 }
